@@ -20,7 +20,7 @@ class Main extends Phaser.Scene {
         this.plane.play("planeAnimation");
         this.plane.alive = true;
 
-        // Измененный способ обработки нажатия пробела
+       
         this.input.keyboard.on('keydown-SPACE', this.jump, this);
         this.input.on('pointerdown', this.jump, this); // Для мобильных устройств
 
